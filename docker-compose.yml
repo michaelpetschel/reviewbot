@@ -1,0 +1,9 @@
+services:
+  reviewbot:
+    image: ghcr.io/iostpa/reviewbot:latest
+    restart: always
+    env_file: ".env"
+    ports:
+      - "1200:1200"
+    volumes:
+      - ./private-key.pem:/app/private-key.pem:ro  # read-only
