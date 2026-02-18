@@ -4,14 +4,16 @@
   "version": "1.0.0",
   "type": "module",
   "description": "An app to assist in the review process of is-a-dev",
-  "author": "is-a.dev",
+  "author": "iostpa",
   "scripts": {
     "server": "node index.js",
-    "lint": "standard"
+    "lint": "eslint index.js"
   },
   "devDependencies": {
-    "smee-client": "^5.0.0",
-    "standard": "^17.1.2"
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.0.0",
+    "globals": "^17.3.0",
+    "smee-client": "^5.0.0"
   },
   "dependencies": {
     "@sentry/node": "^10.39.0",

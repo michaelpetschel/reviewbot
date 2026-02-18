@@ -14,7 +14,7 @@ Please note that this project is released with a [Contributor Code of Conduct](C
 
 1. [Fork][fork] and clone the repository
 1. Install the dependencies: `npm install`
-1. Make sure the linter passes on your machine: `npx standard --fix`
+1. Make sure the linter passes on your machine: `npm run lint`
 1. Create a new branch: `git checkout -b my-branch-name`
 1. Make your change, and make sure the linter is still happy
 1. Push to your fork and [submit a pull request][pr]
