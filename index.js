@@ -95,12 +95,11 @@ app.webhooks.on('pull_request.closed', async ({ octokit, payload }) => {
 
 // Handle errors
 app.webhooks.onError((error) => {
+  Sentry.captureException(error)
   if (error.name === 'AggregateError') {
     // Log Secret verification errors
-    Sentry.captureException(error)
     console.log(`Error processing request: ${error.event}`)
   } else {
-    Sentry.captureException(error)
     console.log(error)
   }
 })
